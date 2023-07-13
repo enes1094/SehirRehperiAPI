@@ -32,7 +32,7 @@ namespace SehirRehperi.API.Controllers
         public async Task<ActionResult> Get(int id)
         {
             var value = await _context.Values.FirstOrDefaultAsync(v=>v.Id==id);
-            return Ok(value);
+            return Ok (value);
             
         }
 
